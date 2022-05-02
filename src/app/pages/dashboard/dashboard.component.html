@@ -1,382 +1,367 @@
-
-<div class=" content">
-  <div class=" row">
-    <div class=" col-12">
-      <div class=" card card-chart">
-        <div class=" card-header">
-          <div class=" row">
-            <div class=" col-sm-6 text-left">
-              <h5 class=" card-category">Total Shipments</h5>
-              <h2 class=" card-title">Performance</h2>
-            </div>
-            <div class=" col-sm-6">
-              <div
-                class=" btn-group btn-group-toggle float-right"
-                data-toggle="buttons"
-              >
-                <label class=" btn btn-sm btn-danger btn-simple" (click)="data=datasets[0];updateOptions();clicked=true;clicked1=false;clicked2=false" [ngClass]="{'active':clicked===true}">
-                  <input checked="checked" name="options" type="radio" />
-
-                  <span
-                    class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
-                  >
-                    Accounts
-                  </span>
-                  <span class=" d-block d-sm-none">
-                    <i class=" tim-icons icon-single-02"> </i>
-                  </span>
-                </label>
-                <label class=" btn btn-sm btn-danger btn-simple" (click)="data=datasets[1];updateOptions();clicked=false;clicked1=true;clicked2=false" [ngClass]="{'active':clicked1===true}">
-                  <input
-                    class=" d-none d-sm-none"
-                    name="options"
-                    type="radio"
-                  />
-
-                  <span
-                    class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
-                  >
-                    Purchases
-                  </span>
-                  <span class=" d-block d-sm-none">
-                    <i class=" tim-icons icon-gift-2"> </i>
-                  </span>
-                </label>
-                <label class=" btn btn-sm btn-danger btn-simple" (click)="data=datasets[2];updateOptions();clicked=false;clicked1=false;clicked2=true" [ngClass]="{'active':clicked2===true}">
-                  <input class=" d-none" name="options" type="radio" />
-
-                  <span
-                    class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
-                  >
-                    Sessions
-                  </span>
-                  <span class=" d-block d-sm-none">
-                    <i class=" tim-icons icon-tap-02"> </i>
-                  </span>
-                </label>
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+      <!-- Card stats -->
+      <div class="row">
+        <div class="col-xl-3 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Traffic</h5>
+                  <span class="h2 font-weight-bold mb-0">350,897</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                    <i class="fas fa-chart-bar"></i>
+                  </div>
+                </div>
               </div>
+              <p class="mt-3 mb-0 text-muted text-sm">
+                <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                <span class="text-nowrap">Since last month</span>
+              </p>
             </div>
           </div>
         </div>
-        <div class=" card-body">
-          <div class=" chart-area"><canvas id="chartBig1"> </canvas></div>
+        <div class="col-xl-3 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">New users</h5>
+                  <span class="h2 font-weight-bold mb-0">2,356</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
+                    <i class="fas fa-chart-pie"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 mb-0 text-muted text-sm">
+                <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> 3.48%</span>
+                <span class="text-nowrap">Since last week</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Sales</h5>
+                  <span class="h2 font-weight-bold mb-0">924</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
+                    <i class="fas fa-users"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 mb-0 text-muted text-sm">
+                <span class="text-warning mr-2"><i class="fas fa-arrow-down"></i> 1.10%</span>
+                <span class="text-nowrap">Since yesterday</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Performance</h5>
+                  <span class="h2 font-weight-bold mb-0">49,65%</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-info text-white rounded-circle shadow">
+                    <i class="fas fa-percent"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 mb-0 text-muted text-sm">
+                <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 12%</span>
+                <span class="text-nowrap">Since last month</span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class=" row">
-    <div class=" col-lg-4">
-      <div class=" card card-chart">
-        <div class=" card-header">
-          <h5 class=" card-category">Total Shipments</h5>
-          <h3 class=" card-title">
-            <i class=" tim-icons icon-bell-55 text-danger-states"> </i> 763,215
-          </h3>
+</div>
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col-xl-8 mb-5 mb-xl-0">
+      <div class="card bg-gradient-default shadow">
+        <div class="card-header bg-transparent">
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="text-uppercase text-light ls-1 mb-1">Overview</h6>
+              <h2 class="text-white mb-0">Sales value</h2>
+            </div>
+            <div class="col">
+              <ul class="nav nav-pills justify-content-end">
+                <li class="nav-item mr-2 mr-md-0" data-toggle="chart" data-target="#chart-sales"  (click)="data=datasets[0];updateOptions()">
+                  <a href="javascript:void(0)" class="nav-link py-2 px-3" [ngClass]="{'active':clicked===true}" data-toggle="tab" (click)="clicked=true;clicked1=false">
+                    <span class="d-none d-md-block">Month</span>
+                    <span class="d-md-none">M</span>
+                  </a>
+                </li>
+                <li class="nav-item" data-toggle="chart" data-target="#chart-sales"  (click)="data=datasets[1];updateOptions()">
+                  <a href="javascript:void(0)" class="nav-link py-2 px-3" [ngClass]="{'active':clicked1===true}" data-toggle="tab" (click)="clicked=false;clicked1=true">
+                    <span class="d-none d-md-block">Week</span>
+                    <span class="d-md-none">W</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class=" card-body">
-          <div class=" chart-area"><canvas id="chartLineRed"> </canvas></div>
+        <div class="card-body">
+          <!-- Chart -->
+          <div class="chart">
+            <!-- Chart wrapper -->
+            <canvas id="chart-sales" class="chart-canvas"></canvas>
+          </div>
         </div>
       </div>
     </div>
-    <div class=" col-lg-4">
-      <div class=" card card-chart">
-        <div class=" card-header">
-          <h5 class=" card-category">Daily Sales</h5>
-          <h3 class=" card-title">
-            <i class=" tim-icons icon-delivery-fast text-info"> </i> 3,500€
-          </h3>
+    <div class="col-xl-4">
+      <div class="card shadow">
+        <div class="card-header bg-transparent">
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="text-uppercase text-muted ls-1 mb-1">Performance</h6>
+              <h2 class="mb-0">Total orders</h2>
+            </div>
+          </div>
         </div>
-        <div class=" card-body">
-          <div class=" chart-area"><canvas id="CountryChart"> </canvas></div>
-        </div>
-      </div>
-    </div>
-    <div class=" col-lg-4">
-      <div class=" card card-chart">
-        <div class=" card-header">
-          <h5 class=" card-category">Completed Tasks</h5>
-          <h3 class=" card-title">
-            <i class=" tim-icons icon-send text-success"> </i> 12,100K
-          </h3>
-        </div>
-        <div class=" card-body">
-          <div class=" chart-area"><canvas id="chartLineGreen"> </canvas></div>
+        <div class="card-body">
+          <!-- Chart -->
+          <div class="chart">
+            <canvas id="chart-orders" class="chart-canvas"></canvas>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class=" row">
-    <div class=" col-lg-6 col-md-12">
-      <div class=" card card-tasks">
-        <div class=" card-header">
-          <h6 class=" title d-inline">Tasks(5)</h6>
-          <p class=" card-category d-inline">today</p>
-          <div ngbDropdown>
-            <button
-              class=" btn btn-link btn-icon"
-              data-toggle="dropdown"
-              ngbDropdownToggle
-              type="button"
-            >
-              <i class=" tim-icons icon-settings-gear-63"> </i>
-            </button>
-            <div
-              aria-labelledby="dropdownMenuLink"
-              class=" dropdown-menu-right"
-              ngbDropdownMenu
-            >
-              <a href="javascript:void(0)" ngbDropdownItem> Action </a>
-              <a href="javascript:void(0)" ngbDropdownItem> Another action </a>
-              <a href="javascript:void(0)" ngbDropdownItem> Something else </a>
+  <div class="row mt-5">
+    <div class="col-xl-8 mb-5 mb-xl-0">
+      <div class="card shadow">
+        <div class="card-header border-0">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="mb-0">Page visits</h3>
+            </div>
+            <div class="col text-right">
+              <a href="#!" class="btn btn-sm btn-primary">See all</a>
             </div>
           </div>
         </div>
-        <div class=" card-body">
-          <div class=" table-full-width table-responsive">
-            <table class=" table">
-              <tbody>
-                <tr>
-                  <td>
-                    <div class=" form-check">
-                      <label class=" form-check-label">
-                        <input
-                          class=" form-check-input"
-                          type="checkbox"
-                          value=""
-                        />
-
-                        <span class=" form-check-sign">
-                          <span class=" check"> </span>
-                        </span>
-                      </label>
-                    </div>
-                  </td>
-                  <td>
-                    <p class=" title">Update the Documentation</p>
-                    <p class=" text-muted">
-                      Dwuamish Head, Seattle, WA 8:47 AM
-                    </p>
-                  </td>
-                  <td class=" td-actions text-right">
-                    <button class=" btn btn-link" type="button" placement="left" ngbTooltip="Edit Task" container="body" >
-                      <i class=" tim-icons icon-pencil"> </i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class=" form-check">
-                      <label class=" form-check-label">
-                        <input
-                          checked=""
-                          class=" form-check-input"
-                          type="checkbox"
-                          value=""
-                        />
-
-                        <span class=" form-check-sign">
-                          <span class=" check"> </span>
-                        </span>
-                      </label>
-                    </div>
-                  </td>
-                  <td>
-                    <p class=" title">GDPR Compliance</p>
-                    <p class=" text-muted">
-                      The GDPR is a regulation that requires businesses to
-                      protect the personal data and privacy of Europe citizens
-                      for transactions that occur within EU member states.
-                    </p>
-                  </td>
-                  <td class=" td-actions text-right">
-                    <button class=" btn btn-link" type="button" placement="left" ngbTooltip="Edit Task" container="body" >
-                      <i class=" tim-icons icon-pencil"> </i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class=" form-check">
-                      <label class=" form-check-label">
-                        <input
-                          class=" form-check-input"
-                          type="checkbox"
-                          value=""
-                        />
-
-                        <span class=" form-check-sign">
-                          <span class=" check"> </span>
-                        </span>
-                      </label>
-                    </div>
-                  </td>
-                  <td>
-                    <p class=" title">Solve the issues</p>
-                    <p class=" text-muted">
-                      Fifty percent of all respondents said they would be more
-                      likely to shop at a company
-                    </p>
-                  </td>
-                  <td class=" td-actions text-right">
-                    <button class=" btn btn-link" type="button" placement="left" ngbTooltip="Edit Task" container="body" >
-                      <i class=" tim-icons icon-pencil"> </i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class=" form-check">
-                      <label class=" form-check-label">
-                        <input
-                          class=" form-check-input"
-                          type="checkbox"
-                          value=""
-                        />
-
-                        <span class=" form-check-sign">
-                          <span class=" check"> </span>
-                        </span>
-                      </label>
-                    </div>
-                  </td>
-                  <td>
-                    <p class=" title">Release v2.0.0</p>
-                    <p class=" text-muted">
-                      Ra Ave SW, Seattle, WA 98116, SUA 11:19 AM
-                    </p>
-                  </td>
-                  <td class=" td-actions text-right">
-                    <button class=" btn btn-link" type="button" placement="left" ngbTooltip="Edit Task" container="body"  >
-                      <i class=" tim-icons icon-pencil"> </i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class=" form-check">
-                      <label class=" form-check-label">
-                        <input
-                          class=" form-check-input"
-                          type="checkbox"
-                          value=""
-                        />
-
-                        <span class=" form-check-sign">
-                          <span class=" check"> </span>
-                        </span>
-                      </label>
-                    </div>
-                  </td>
-                  <td>
-                    <p class=" title">Export the processed files</p>
-                    <p class=" text-muted">
-                      The report also shows that consumers will not easily
-                      forgive a company once a breach exposing their personal
-                      data occurs.
-                    </p>
-                  </td>
-                  <td class=" td-actions text-right">
-                    <button class=" btn btn-link" type="button" placement="left" ngbTooltip="Edit Task" container="body" >
-                      <i class=" tim-icons icon-pencil"> </i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class=" form-check">
-                      <label class=" form-check-label">
-                        <input
-                          class=" form-check-input"
-                          type="checkbox"
-                          value=""
-                        />
-
-                        <span class=" form-check-sign">
-                          <span class=" check"> </span>
-                        </span>
-                      </label>
-                    </div>
-                  </td>
-                  <td>
-                    <p class=" title">Arival at export process</p>
-                    <p class=" text-muted">
-                      Capitol Hill, Seattle, WA 12:34 AM
-                    </p>
-                  </td>
-                  <td class=" td-actions text-right">
-                    <button class=" btn btn-link" type="button" placement="left" ngbTooltip="Edit Task" container="body" >
-                      <i class=" tim-icons icon-pencil"> </i>
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="table-responsive">
+          <!-- Projects table -->
+          <table class="table align-items-center table-flush">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Page name</th>
+                <th scope="col">Visitors</th>
+                <th scope="col">Unique users</th>
+                <th scope="col">Bounce rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  /argon/
+                </th>
+                <td>
+                  4,569
+                </td>
+                <td>
+                  340
+                </td>
+                <td>
+                  <i class="fas fa-arrow-up text-success mr-3"></i> 46,53%
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  /argon/index.html
+                </th>
+                <td>
+                  3,985
+                </td>
+                <td>
+                  319
+                </td>
+                <td>
+                  <i class="fas fa-arrow-down text-warning mr-3"></i> 46,53%
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  /argon/charts.html
+                </th>
+                <td>
+                  3,513
+                </td>
+                <td>
+                  294
+                </td>
+                <td>
+                  <i class="fas fa-arrow-down text-warning mr-3"></i> 36,49%
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  /argon/tables.html
+                </th>
+                <td>
+                  2,050
+                </td>
+                <td>
+                  147
+                </td>
+                <td>
+                  <i class="fas fa-arrow-up text-success mr-3"></i> 50,87%
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  /argon/profile.html
+                </th>
+                <td>
+                  1,795
+                </td>
+                <td>
+                  190
+                </td>
+                <td>
+                  <i class="fas fa-arrow-down text-danger mr-3"></i> 46,53%
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-    <div class=" col-lg-6 col-md-12">
-      <div class=" card">
-        <div class=" card-header">
-          <h4 class=" card-title">Simple Table</h4>
-        </div>
-        <div class=" card-body">
-          <div class=" table-responsive">
-            <table class=" table tablesorter" id="">
-              <thead class=" text-primary">
-                <tr>
-                  <th>Name</th>
-                  <th>Country</th>
-                  <th>City</th>
-                  <th class=" text-center">Salary</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Dakota Rice</td>
-                  <td>Niger</td>
-                  <td>Oud-Turnhout</td>
-                  <td class=" text-center">$36,738</td>
-                </tr>
-                <tr>
-                  <td>Minerva Hooper</td>
-                  <td>CuraÃ§ao</td>
-                  <td>Sinaai-Waas</td>
-                  <td class=" text-center">$23,789</td>
-                </tr>
-                <tr>
-                  <td>Sage Rodriguez</td>
-                  <td>Netherlands</td>
-                  <td>Baileux</td>
-                  <td class=" text-center">$56,142</td>
-                </tr>
-                <tr>
-                  <td>Philip Chaney</td>
-                  <td>Korea, South</td>
-                  <td>Overland Park</td>
-                  <td class=" text-center">$38,735</td>
-                </tr>
-                <tr>
-                  <td>Doris Greene</td>
-                  <td>Malawi</td>
-                  <td>Feldkirchen in KÃ¤rnten</td>
-                  <td class=" text-center">$63,542</td>
-                </tr>
-                <tr>
-                  <td>Mason Porter</td>
-                  <td>Chile</td>
-                  <td>Gloucester</td>
-                  <td class=" text-center">$78,615</td>
-                </tr>
-                <tr>
-                  <td>Jon Porter</td>
-                  <td>Portugal</td>
-                  <td>Gloucester</td>
-                  <td class=" text-center">$98,615</td>
-                </tr>
-              </tbody>
-            </table>
+    <div class="col-xl-4">
+      <div class="card shadow">
+        <div class="card-header border-0">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="mb-0">Social traffic</h3>
+            </div>
+            <div class="col text-right">
+              <a href="#!" class="btn btn-sm btn-primary">See all</a>
+            </div>
           </div>
+        </div>
+        <div class="table-responsive">
+          <!-- Projects table -->
+          <table class="table align-items-center table-flush">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Referral</th>
+                <th scope="col">Visitors</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  Facebook
+                </th>
+                <td>
+                  1,480
+                </td>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <span class="mr-2">60%</span>
+                    <div>
+                      <div class="progress">
+                        <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Facebook
+                </th>
+                <td>
+                  5,480
+                </td>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <span class="mr-2">70%</span>
+                    <div>
+                      <div class="progress">
+                        <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Google
+                </th>
+                <td>
+                  4,807
+                </td>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <span class="mr-2">80%</span>
+                    <div>
+                      <div class="progress">
+                        <div class="progress-bar bg-gradient-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  Instagram
+                </th>
+                <td>
+                  3,678
+                </td>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <span class="mr-2">75%</span>
+                    <div>
+                      <div class="progress">
+                        <div class="progress-bar bg-gradient-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  twitter
+                </th>
+                <td>
+                  2,645
+                </td>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <span class="mr-2">30%</span>
+                    <div>
+                      <div class="progress">
+                        <div class="progress-bar bg-gradient-warning" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

@@ -1,26 +1,26 @@
-# [Black Dashboard Angular](https://demos.creative-tim.com/black-dashboard-angular/#/dashboard?ref=bda-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fdemos.creative-tim.com%2Fblack-dashboard-angular%2F%23%2Fadmin%2Fdashboard&text=Black%20Dashboard%20Angular%20by%20Creative%20Tim%20%7C%20Free%20Angular%20Admin%20Template&original_referer=https%3A%2F%2Fdemos.creative-tim.com%2Fblack-dashboard-angular%2F&via=creativetim&hashtags=angular%2Ccreativetim%2Cdark%2Cdashboard%2Cbootstrap%2Cangular)
+# [Argon Dashboard Angular](https://demos.creative-tim.com/argon-dashboard-angular/?ref=ada-github-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Argon%20Dashboard%20is%20a%20Free%20Bootstrap%20and%20Angular%20Dashboard%20made%20using%20angular-cli%20%E2%9D%A4%EF%B8%8F%0Ahttps%3A//demos.creative-tim.com/argon-dashboard-angular%20%23angular%20%23angular-cli%20%23argon%20%23argondesign%20%23angulardashboard%20%23argonangular%20%23angulardesign%20%23bootstrap%20%23design%20%23uikit%20%23freebie%20%20via%20%40CreativeTim)
 
 
 
-![version](https://img.shields.io/badge/version-1.3.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/black-dashboard-angular.svg?maxAge=2592000)]() [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/black-dashboard-angular.svg?maxAge=2592000)]()  [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
-
-![Product Gif](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/black-dashboard-angular/bd_angular.gif)
+ ![version](https://img.shields.io/badge/version-1.4.0-blue.svg)  ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/argon-dashboard-angular.svg?maxAge=2592000)](https://github.com/creativetimofficial/argon-dashboard-angular/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/argon-dashboard-angular.svg?maxAge=2592000)](https://github.com/creativetimofficial/argon-dashboard-angular/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
 
-Black Dashboard Angular is a beautiful [Bootstrap 4](http://getbootstrap.com/) and [Angular](https://angular.io/) Admin Dashboard with a huge number of components built to fit together and look amazing. If you are looking for a tool to manage and visualize data about your business, this dashboard is the thing for you. It combines colors that are easy on the eye, spacious cards, beautiful typography, and graphics.
-Black Dashboard Angular comes packed with all plugins that you might need inside a project and documentation on how to get started. It is light and easy to use, and also very powerful.
+![Product Gif](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-angular/argon-dashboard-angular.gif)
 
-Black Dashboard Angular features over 16 individual components, giving you the freedom of choosing and combining. This means that there are thousands of possible combinations. All components can take variations in color, that you can easily modify using SASS files. You will save a lot of time going from prototyping to full-functional code because all elements are implemented.
-We thought about everything, so this dashboard comes with 2 versions, Dark Mode and Light Mode.
+**Fully Coded Components**
 
-Special thanks go for the owners of these plugins:
-- [Perfect Scrollbar](http://utatti.github.io/perfect-scrollbar/) for the nice scrollbars for windows.
-- [Ng Bootstrap](https://ng-bootstrap.github.io/#/home) for the wonderful components.
-- [Chartjs](https://www.chartjs.org/) for the wonderful charts.
+Argon Dashboard Angular is built with over 100 individual components, giving you the freedom of choosing and combining. All components can take variations in color, that you can easily modify using SASS files.
+You will save a lot of time going from prototyping to full-functional code, because all elements are implemented. This Dashboard is coming with pre-built examples, so the development process is seamless, switching from our pages to the real website is very easy to be done.
+Every element has multiple states for colors, styles, hover, focus, that you can easily access and use.
 
-We are very excited to share this dashboard with you and we look forward to hearing your feedback!
+**Complex Documentation**
 
-**Example Pages** We wanted to fully display the power of this dashboard, so the kit comes packed with examples showing you how to use the components.
+Each element is well presented in a very complex documentation. You can read more about the idea behind this [dashboard here](https://demos.creative-tim.com/argon-dashboard-angular/documentation/tutorial?ref=ada-github-readme). You can check the [components here](https://demos.creative-tim.com/argon-dashboard-angular/documentation/alerts?ref=ada-github-readme) and the [foundation here](https://demos.creative-tim.com/argon-dashboard-angular/documentation/colors?ref=ada-github-readme).
+
+**Example Pages**
+
+If you want to get inspiration or just show something directly to your clients, you can jump start your development with our pre-built example pages. You will be able to quickly set up the basic structure for your web project.
+
 
 ## Table of Contents
 
@@ -32,86 +32,77 @@ We are very excited to share this dashboard with you and we look forward to hear
 * [Browser Support](#browser-support)
 * [Resources](#resources)
 * [Reporting Issues](#reporting-issues)
-* [Technical Support or Questions](#technical-support-or-questions)
 * [Licensing](#licensing)
 * [Useful Links](#useful-links)
 
-
 ## Versions
 
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/black-dashboard?ref=bda-readme)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/angular.png" width="60" height="60" />](https://www.creative-tim.com/product/black-dashboard-angular?ref=bda-readme)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/black-dashboard-react?ref=bda-readme)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-black-dashboard?ref=bda-readme)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/argon-dashboard)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/argon-dashboard-react)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/angular-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/argon-dashboard-angular)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/nodejs-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/argon-dashboard-nodejs)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/laravel_logo.png" width="60" height="60" style="background:white"/>](https://www.creative-tim.com/product/argon-dashboard-laravel)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/sketch-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/argon-dashboard/tree/sketch)
 
 
-| HTML | Angular | React | Vue |
-| --- | --- | --- | --- |
-| [![Black Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/93/thumb/opt_bd_thumbnail.jpg)](https://www.creative-tim.com/product/black-dashboard?ref=bda-readme) | [![Black Dashboard Angular](https://s3.amazonaws.com/creativetim_bucket/products/169/thumb/opt_bd_angular_thumbnail.jpg)](https://www.creative-tim.com/product/black-dashboard-angular?ref=bda-readme) | [![Black Dashboard React](https://s3.amazonaws.com/creativetim_bucket/products/136/thumb/opt_bd_react.jpg)](https://www.creative-tim.com/product/black-dashboard-react?ref=bda-readme) | [![Vue Black Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/99/thumb/opt_bd_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-black-dashboard?ref=bda-readme) |
+
+| HTML | React | Angular  |
+| --- | --- | ---  |
+| [![Argon Dashboard HTML](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard/argon-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard?ref=ada-github-readme)  | [![Argon Dashboard React](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-react/argon-dashboard-react.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-react?ref=ada-github-readme)  | [![Argon Dashboard Angular](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-angular/argon-dashboard-angular.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-angular?ref=ada-github-readme)
+
+| NodeJS | Laravel |
+| ---  | --- |
+| [![Argon Dashboard NodeJS](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-nodejs/argon-dashboard-nodejs.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-nodejs?ref=ada-github-readme) | [![Argon Dashboard Laravel](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-laravel/argon-dashboard-laravel.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-laravel?ref=ada-github-readme) |
 
 ## Demo
 
-| Dashboard | User Profile | Tables | RTL | Notification |
-| --- | --- | --- | --- | --- |
-| [![Start page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/black-dashboard-angular/dashboard.png?raw=true)](https://demos.creative-tim.com/black-dashboard-angular/#/dashboard?ref=bda-readme) | [![User profile page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/black-dashboard-angular/user.png?raw=true)](https://demos.creative-tim.com/black-dashboard-angular/#/user?ref=bda-readme) | [![Tables page ](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/black-dashboard-angular/tables.png?raw=true)](https://demos.creative-tim.com/black-dashboard-angular/#/tables?ref=bda-readme) | [![RTL Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/black-dashboard-angular/rtl.png?raw=true)](https://demos.creative-tim.com/black-dashboard-angular/#/maps?ref=bda-readme) | [![Notification page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/black-dashboard-angular/notifications.png?raw=true)](https://demos.creative-tim.com/black-dashboard-angular/#/notifications?ref=bda-readme)
+| Dashboard Page | Icons Page | User Profile Page  | Tables Page | Login Page | Register Page  |
+| --- | --- | ---  | --- | --- | ---  |
+| [![Dashboard Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-angular/dashboard.png)](https://demos.creative-tim.com/argon-dashboard-angular/dashboard?ref=ada-github-readme)  | [![Icons Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-angular/icons.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-angular/icons?ref=ada-github-readme)  | [![User Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-angular/user.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-angular/user?ref=ada-github-readme)  | [![Tables Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-angular/tables.png)](https://demos.creative-tim.com/argon-dashboard-angular/tables?ref=ada-github-readme)  | [![Login Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-angular/login.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-angular/login?ref=ada-github-readme)  | [![Register Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-angular/register.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-angular/register?ref=ada-github-readme)  
 
-[View More](https://demos.creative-tim.com/black-dashboard-angular/#/dashboard?ref=bda-readme).
+[View More](https://demos.creative-tim.com/argon-dashboard-angular/dashboard)
 
 
 ## Quick start
 
-Quick start options:
+- [Download from Github](https://github.com/creativetimofficial/argon-dashboard-angular/archive/master.zip).
+- [Download from Creative Tim](https://www.creative-tim.com/product/argon-dashboard-angular?ref=ada-github-readme).
+- Clone the repo: `git clone https://github.com/creativetimofficial/argon-dashboard-angular.git`.
 
-- [Download from Creative Tim](https://www.creative-tim.com/product/black-dashboard-angular?ref=bda-readme).
 
-## Terminal Commands
+## Documentation
+The documentation for the Argon Dashboard Angular is hosted at our [website](https://demos.creative-tim.com/argon-dashboard-angular/documentation/tutorial?ref=ada-github-readme).
 
-1. Install NodeJs from [NodeJs Official Page](https://nodejs.org/en).
-2. Open Terminal
-3. Go to your file project
-4. Run in terminal: ```npm install -g @angular/cli```
-5. Then: ```npm install```
-6. And: ```ng serve```
-7. Navigate to: [http://localhost:4200/](http://localhost:4200/)
 
 ## File Structure
-
 Within the download you'll find the following directories and files:
 
 ```
-black-dashboard-angular
+argon-dashboard-angular
 ├── CHANGELOG.md
-├── documentation
-├── ISSUE_TEMPLATE.md
-├── LICENSE.md
 ├── README.md
 ├── angular.json
 ├── e2e
-├── package-lock.json
 ├── package.json
 ├── src
 │   ├── app
-│   │   ├── app-routing.module.ts
 │   │   ├── app.component.html
 │   │   ├── app.component.scss
 │   │   ├── app.component.spec.ts
 │   │   ├── app.component.ts
 │   │   ├── app.module.ts
+│   │   ├── app.routing.ts
 │   │   ├── components
+│   │   │   ├── components.module.spec.ts
 │   │   │   ├── components.module.ts
 │   │   │   ├── footer
-│   │   │   │   ├── footer.component.css
 │   │   │   │   ├── footer.component.html
+│   │   │   │   ├── footer.component.scss
 │   │   │   │   ├── footer.component.spec.ts
 │   │   │   │   └── footer.component.ts
 │   │   │   ├── navbar
-│   │   │   │   ├── navbar.component.css
 │   │   │   │   ├── navbar.component.html
+│   │   │   │   ├── navbar.component.scss
 │   │   │   │   ├── navbar.component.spec.ts
 │   │   │   │   └── navbar.component.ts
 │   │   │   └── sidebar
-│   │   │       ├── sidebar.component.css
 │   │   │       ├── sidebar.component.html
+│   │   │       ├── sidebar.component.scss
 │   │   │       ├── sidebar.component.spec.ts
 │   │   │       └── sidebar.component.ts
 │   │   ├── layouts
@@ -129,44 +120,57 @@ black-dashboard-angular
 │   │   │       ├── auth-layout.component.ts
 │   │   │       ├── auth-layout.module.ts
 │   │   │       └── auth-layout.routing.ts
-│   │   └── pages
-│   │       ├── dashboard
-│   │       │   ├── dashboard.component.html
-│   │       │   └── dashboard.component.ts
-│   │       ├── icons
-│   │       │   ├── icons.component.html
-│   │       │   └── icons.component.ts
-│   │       ├── map
-│   │       │   ├── map.component.html
-│   │       │   └── map.component.ts
-│   │       ├── notifications
-│   │       │   ├── notifications.component.html
-│   │       │   └── notifications.component.ts
-│   │       ├── rtl
-│   │       │   ├── rtl.component.html
-│   │       │   └── rtl.component.ts
-│   │       ├── tables
-│   │       │   ├── tables.component.html
-│   │       │   └── tables.component.ts
-│   │       ├── typography
-│   │       │   ├── typography.component.html
-│   │       │   └── typography.component.ts
-│   │       └── user
-│   │           ├── user.component.html
-│   │           └── user.component.ts
+│   │   ├── pages
+│   │   │   ├── dashboard
+│   │   │   │   ├── dashboard.component.html
+│   │   │   │   ├── dashboard.component.scss
+│   │   │   │   ├── dashboard.component.spec.ts
+│   │   │   │   └── dashboard.component.ts
+│   │   │   ├── icons
+│   │   │   │   ├── icons.component.html
+│   │   │   │   ├── icons.component.scss
+│   │   │   │   ├── icons.component.spec.ts
+│   │   │   │   └── icons.component.ts
+│   │   │   ├── login
+│   │   │   │   ├── login.component.html
+│   │   │   │   ├── login.component.scss
+│   │   │   │   ├── login.component.spec.ts
+│   │   │   │   └── login.component.ts
+│   │   │   ├── maps
+│   │   │   │   ├── maps.component.html
+│   │   │   │   ├── maps.component.scss
+│   │   │   │   ├── maps.component.spec.ts
+│   │   │   │   └── maps.component.ts
+│   │   │   ├── register
+│   │   │   │   ├── register.component.html
+│   │   │   │   ├── register.component.scss
+│   │   │   │   ├── register.component.spec.ts
+│   │   │   │   └── register.component.ts
+│   │   │   ├── tables
+│   │   │   │   ├── tables.component.html
+│   │   │   │   ├── tables.component.scss
+│   │   │   │   ├── tables.component.spec.ts
+│   │   │   │   └── tables.component.ts
+│   │   │   └── user-profile
+│   │   │       ├── user-profile.component.html
+│   │   │       ├── user-profile.component.scss
+│   │   │       ├── user-profile.component.spec.ts
+│   │   │       └── user-profile.component.ts
+│   │   └── variables
+│   │       └── charts.ts
 │   ├── assets
-│   │   ├── css
-│   │   ├── demo
 │   │   ├── fonts
 │   │   ├── img
-│   │   └── scss
-│   │       ├── black-dashboard
-│   │       └── black-dashboard.scss
+│   │   ├── scss
+│   │   │   ├── angular-differences
+│   │   │   ├── argon.scss
+│   │   │   ├── core
+│   │   │   └── custom
+│   │   └── vendor
 │   ├── browserslist
 │   ├── environments
 │   ├── favicon.ico
 │   ├── index.html
-│   ├── karma.conf.js
 │   ├── main.ts
 │   ├── polyfills.ts
 │   ├── styles.scss
@@ -177,56 +181,57 @@ black-dashboard-angular
 ├── tsconfig.json
 └── tslint.json
 ```
-`
+
+
 ## Browser Support
 
 At present, we officially aim to support the last two versions of the following browsers:
 
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
+<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/chrome-logo.png?raw=true" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/firefox-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/edge-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/safari-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/opera-logo.png" width="64" height="64">
+
 
 
 ## Resources
-- Demo: https://demos.creative-tim.com/black-dashboard-angular/#/dashboard?ref=bda-readme
-- Download Page: https://www.creative-tim.com/product/black-dashboard-angular?ref=bda-readme
-- Documentation: https://demos.creative-tim.com/black-dashboard-angular/#/documentation/tutorial?ref=bda-readme
-- License Agreement: https://www.creative-tim.com/license?ref=bda-readme
-- Support: https://www.creative-tim.com/contact-us?ref=bda-readme
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/black-dashboard-angular/issues?ref=bda-readme)
+- Demo: <https://demos.creative-tim.com/argon-dashboard-angular/dashboard?ref=ada-github-readme>
+- Download Page: <https://www.creative-tim.com/product/argon-dashboard-angular?ref=ada-github-readme>
+- Documentation: <https://demos.creative-tim.com/argon-dashboard-angular/documentation/tutorial?ref=ada-github-readme>
+- License Agreement: <https://www.creative-tim.com/license?ref=ada-github-readme>
+- Support: <https://www.creative-tim.com/contact-us?ref=ada-github-readme>
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/argon-dashboard-angular/issues?ref=ada-github-readme)
 
 ## Reporting Issues
-We use GitHub Issues as the official bug tracker for the black Dashboard Angular. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the black Dashboard Angular. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
+We use GitHub Issues as the official bug tracker for the Material Kit. Here are some advices for our users that want to report an issue:
+
+1. Make sure that you are using the latest version of the Material Kit. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=ada-github-readme).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
-## Technical Support or Questions
-
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us?ref=bda-readme) instead of opening an issue.
-
 ## Licensing
 
-- Copyright 2019 Creative Tim (https://www.creative-tim.com?ref=bda-readme)
-- Licensed under MIT (https://github.com/creativetimofficial/black-dashboard-angular/blob/master/LICENSE.md)
+- Copyright 2018 Creative Tim (https://www.creative-tim.com/?ref=ada-github-readme)
+
+- Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-angular/blob/master/LICENSE.md)
 
 ## Useful Links
 
-More products from Creative Tim: <https://www.creative-tim.com/products?ref=bda-readme>
+- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w?ref=creativetim)
+- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=ada-github-readme) (earn money)
+- [Blog Creative Tim](http://blog.creative-tim.com/?ref=ada-github-readme)
+- [Free Products](https://www.creative-tim.com/bootstrap-themes/free?ref=ada-github-readme) from Creative Tim
+- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=ada-github-readme) from Creative Tim
+- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=ada-github-readme) from Creative Tim
+- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes?ref=ada-github-readme) from Creative Tim
+- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=ada-github-readme) from Creative Tim
+- [More products](https://www.creative-tim.com/bootstrap-themes?ref=ada-github-readme) from Creative Tim
+- Check our Bundles [here](https://www.creative-tim.com/bundles?ref=ada-github-readme)
 
-Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
+### Social Media
 
-Freebies: <https://www.creative-tim.com/products?ref=bda-readme>
+Twitter: <https://twitter.com/CreativeTim?ref=creativetim>
 
-Affiliate Program (earn money): <https://www.creative-tim.com/affiliates/new?ref=bda-readme>
+Facebook: <https://www.facebook.com/CreativeTim?ref=creativetim>
 
-Social Media:
+Dribbble: <https://dribbble.com/creativetim?ref=creativetim>
 
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Google+: <https://plus.google.com/+CreativetimPage>
-
-Instagram: <https://instagram.com/creativetimofficial>
+Instagram: <https://www.instagram.com/CreativeTimOfficial?ref=creativetim>
