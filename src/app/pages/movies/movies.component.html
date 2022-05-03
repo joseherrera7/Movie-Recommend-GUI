@@ -13,29 +13,52 @@
   <!-- Table -->
   <div class="row">
     <div class="col">
-      <div class="card" *ngFor="let movie of movies; index as i;">
-        <div class="card-body">
-          <div class="row icon-examples">
-            <div class="col-lg-3 col-md-6" >
-
-                <div style="border: 1px;">
-                  <!--<img [src]="movie.img" alt="">-->
-                  <h5 class="card-title">{{ movie.movie_title }}</h5>
-                  <p class="card-text">IMDB Score: {{ movie.imdb_score }}</p>
-                  <p class="card-text"># Críticas: {{ movie.num_critic_for_reviews }}</p>
-                  <p class="card-text">Puntaje: {{ movie.score }}</p>
-                  <a class="btn btn-primary" (click)="encontrarRecomendaciones(movie.movie_title)">Encontrar recomendaciones</a>
-                  <button class="btn btn-success">Agregar a favoritas</button>
-                  <button class="btn btn-danger">Quitar de favoritas</button>
-                  <!--<div *ngFor="let genre of movie.genres">
-                    <span>{{ genre }}</span>
-                  </div>-->
+      
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4" *ngFor="let movie of movies; index as i;">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">{{ movie.movie_title }}</h5>
+                  <p class="card-text">Puntaje: {{ movie.score }} ( {{ movie.num_critic_for_reviews }} )</p>
+                  <span class="h2 font-weight-bold mb-0">IMDB Score: {{ movie.imdb_score }}</span>
                 </div>
-
+                <div class="col-2">
+                  <a type="button" ngbTooltip="{{'Encontrar recomendaciones'}}" (click)="encontrarRecomendaciones(movie.movie_title)"> 
+                    <div class="icon icon-shape bg-danger text-white rounded-circle shadow mb-1">
+                      <i class="ni ni-button-play"></i>
+                    </div>
+                  </a>
+                  <a type="button" ngbTooltip="{{'Agregar a favoritas'}}" (click)="encontrarRecomendaciones(movie.movie_title)"> 
+                    <div class="icon icon-shape bg-danger text-white rounded-circle shadow mb-1">
+                      <i class="ni ni-favourite-28"></i>
+                    </div>
+                  </a>
+                  <a type="button" ngbTooltip="{{'Quitar de favoritas'}}" (click)="encontrarRecomendaciones(movie.movie_title)"> 
+                    <div class="icon icon-shape bg-danger text-white rounded-circle shadow mb-1">
+                      <i class="ni ni-fat-remove"></i>
+                    </div>
+                  </a>
+                </div>
+                <!--
+                  <div class="col-auto">
+                    <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                      <i class="fas favourite-28"></i>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                      <i class="fas favourite-28"></i>
+                    </div>
+                  </div>
+                -->
+              </div>
             </div>
           </div>
         </div>
       </div>
+      
     </div>
   </div>
 </div>

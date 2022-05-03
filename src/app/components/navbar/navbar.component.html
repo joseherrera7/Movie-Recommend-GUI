@@ -3,26 +3,15 @@
     <!-- Brand -->
     <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" routerLinkActive="active"
       [routerLink]="['/dashboard']">{{getTitle()}}</a>
-    <!--BOTÓN CARGAR-->
-    <a href="#cargar-peliculas.html" class="botonCargar" style="position: absolute; left: 50%">Cargar Películas</a>
-    <style type="text/css">
-      .botonCargar{
-        text-decoration: none;
-        padding: 10px;
-        font-weight: 600;
-        font-size: 20px;
-        color: #ffffff;
-        border: 2px solid #5a5a5a;
-        border-radius: 35px;
-        
-      }
-      .botonCargar:hover{
-        color: #ffffff;
-        background-color: #085f00;
-      }
-    </style>
+    
     <!-- Form -->
     <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+      <!--BOTÓN CARGAR-->
+      <button class="btn btn-icon btn-3 btn-secondary" type="button">
+        <span class="btn-inner--icon"><i class="ni ni-cloud-upload-96"></i></span>
+        <span class="btn-inner--text">Cargar Películas</span>
+      </button>
+
       <div class="form-group mb-0" [ngClass]="{ 'focused': focus === true }">
         <div class="input-group input-group-alternative">
           <div class="input-group-prepend">
