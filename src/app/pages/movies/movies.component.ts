@@ -4,6 +4,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Item } from "./movie";
 import { Observable } from "rxjs";
 import axios from "axios";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-movies",
@@ -30,9 +31,13 @@ export class MoviesComponent implements OnInit {
     },
   };
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   async ngOnInit() {
+    if (!localStorage.getItem("user_email")) {
+      this.router.navigate(['login']);
+    }
+    
     const { data } = await axios.get(
       environment.protocolo +
         environment.server +

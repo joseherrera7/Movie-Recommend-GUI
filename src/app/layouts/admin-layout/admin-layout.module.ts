@@ -22,7 +22,8 @@ import { MoviesComponent } from "../../pages/movies/movies.component";
     FormsModule,
     HttpClientModule,
     NgbModule,
-    ClipboardModule
+    ClipboardModule,
+    ReactiveFormsModule
   ],
   declarations: [
     DashboardComponent,

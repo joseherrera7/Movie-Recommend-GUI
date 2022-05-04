@@ -12,12 +12,15 @@ export class NavbarComponent implements OnInit {
   public focus;
   public listTitles: any[];
   public location: Location;
+  public Name: string;
+
   constructor(location: Location,  private element: ElementRef, private router: Router) {
     this.location = location;
   }
 
   ngOnInit() {
     this.listTitles = ROUTES.filter(listTitle => listTitle);
+    this.Name = localStorage.getItem("name")
   }
   getTitle(){
     var titlee = this.location.prepareExternalUrl(this.location.path());
@@ -31,6 +34,11 @@ export class NavbarComponent implements OnInit {
         }
     }
     return 'Dashboard';
+  }
+
+  logOut() {
+    localStorage.clear()
+    this.router.navigate(['login']);
   }
 
 }
