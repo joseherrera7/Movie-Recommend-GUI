@@ -5,21 +5,47 @@
       [routerLink]="['/dashboard']">{{getTitle()}}</a>
     
     <!-- Form -->
-    <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+    <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto" [formGroup]="uploadForm">
       <!--BOTÓN CARGAR-->
-      <button class="btn btn-icon btn-3 btn-secondary" type="button">
-        <span class="btn-inner--icon"><i class="ni ni-cloud-upload-96"></i></span>
-        <span class="btn-inner--text">Cargar Películas</span>
-      </button>
+      <label for="file-upload">
+        <div class="btn btn-icon btn-3 btn-secondary">
+          <span class="btn-inner--icon"><i class="ni ni-cloud-upload-96"></i></span>
+          <span  class="btn-inner--text">
+            Cargar Películas
+          </span>
+        </div>
+        <input id="file-upload" type="file" style="display: none;" [accept]="requiredFileType" (change)="uploadFile($event)"/>
+      </label>
 
-      <div class="form-group mb-0" [ngClass]="{ 'focused': focus === true }">
-        <div class="input-group input-group-alternative">
-          <div class="input-group-prepend">
-            <span class="input-group-text"><i class="fas fa-search"></i></span>
-          </div>
-          <input class="form-control" placeholder="Search" type="text" (focus)="focus = true" (blur)="focus = false">
+      <div *ngIf="Success">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+          <span class="alert-inner--text"><strong>¡Archivo subido con éxito!</strong> el ETL se toma de 2 a 4 minutos en terminar</span>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
         </div>
       </div>
+      <div *ngIf="Error">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+          <span class="alert-inner--text"><strong>Algo ha salido mal</strong> en este momento no fue posible cargar el archivo</span>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+      </div>
+
+      <!--
+        <div class="form-group mb-0" [ngClass]="{ 'focused': focus === true }">
+          <div class="input-group input-group-alternative">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-search"></i></span>
+            </div>
+            <input class="form-control" placeholder="Search" type="text" (focus)="focus = true" (blur)="focus = false">
+          </div>
+        </div>
+      -->
     </form>
     <!-- User -->
     <ul class="navbar-nav align-items-center d-none d-md-flex">
