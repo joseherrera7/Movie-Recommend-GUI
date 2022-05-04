@@ -14,28 +14,75 @@
   <div class="row">
     <div class="col">
       
+      <div class="card shadow mb-2">
+        <div class="card-header bg-transparent">
+          <h3 class="mb-0">{{ Title }}</h3>
+        </div>
+      </div>
+
       <div class="row">
         <div class="col-lg-3 col-md-6 mb-4" *ngFor="let movie of movies; index as i;">
           <div class="card card-stats mb-4 mb-xl-0">
             <div class="card-body">
               <div class="row">
                 <div class="col">
-                  <h5 class="card-title text-uppercase text-muted mb-0">{{ movie.movie_title }}</h5>
-                  <p class="card-text">Puntaje: {{ movie.score }} ( {{ movie.num_critic_for_reviews }} )</p>
+                  <h5 class="card-title text-uppercase text-muted mb-0">{{ movie.movie_title.trim() }}</h5>
                   <span class="h2 font-weight-bold mb-0">IMDB Score: {{ movie.imdb_score }}</span>
                 </div>
                 <div class="col-2">
-                  <a type="button" ngbTooltip="{{'Encontrar recomendaciones'}}" (click)="encontrarRecomendaciones(movie.movie_title)"> 
+                  <a type="button" ngbTooltip="{{'Ver'}}" (click)="encontrarRecomendaciones(movie.movie_title)"> 
                     <div class="icon icon-shape bg-danger text-white rounded-circle shadow mb-1">
                       <i class="ni ni-button-play"></i>
                     </div>
                   </a>
-                  <a type="button" ngbTooltip="{{'Agregar a favoritas'}}" (click)="encontrarRecomendaciones(movie.movie_title)"> 
+                </div>
+                <!--
+                  <div class="col-auto">
+                    <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                      <i class="fas favourite-28"></i>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                      <i class="fas favourite-28"></i>
+                    </div>
+                  </div>
+                -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recomendaciones -->
+      <div class="card shadow mb-2">
+        <div class="card-header bg-transparent">
+          <h3 class="mb-0">Recomendaciones para ti</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4" *ngFor="let movie of recomendations; index as i;">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">{{ movie.movie_title.trim() }}</h5>
+                  <p class="card-text">Géneros: {{ movie.genres }}</p>
+                  <span class="h2 font-weight-bold mb-0">IMDB Score: {{ movie.imdb_score }}</span>
+                </div>
+                <div class="col-2">
+                  <a type="button" ngbTooltip="{{'Ver'}}" (click)="encontrarRecomendaciones(movie.movie_title)"> 
+                    <div class="icon icon-shape bg-danger text-white rounded-circle shadow mb-1">
+                      <i class="ni ni-button-play"></i>
+                    </div>
+                  </a>
+                  <a type="button" ngbTooltip="{{'Agregar a favoritas'}}" (click)="agregarAFavoritos(movie.genres, movie.movie_title)"> 
                     <div class="icon icon-shape bg-danger text-white rounded-circle shadow mb-1">
                       <i class="ni ni-favourite-28"></i>
                     </div>
                   </a>
-                  <a type="button" ngbTooltip="{{'Quitar de favoritas'}}" (click)="encontrarRecomendaciones(movie.movie_title)"> 
+                  <a type="button" ngbTooltip="{{'Quitar de favoritas'}}" (click)="quitarDeFavoritos(movie.genres, movie.movie_title)"> 
                     <div class="icon icon-shape bg-danger text-white rounded-circle shadow mb-1">
                       <i class="ni ni-fat-remove"></i>
                     </div>
@@ -58,7 +105,6 @@
           </div>
         </div>
       </div>
-      
     </div>
   </div>
 </div>
